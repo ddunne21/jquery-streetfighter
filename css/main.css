@@ -1,29 +1,49 @@
+@import url(https://fonts.googleapis.com/css?family=Rock+Salt);
+
 body {
-	background-color: black;
+  background-color: black;
 }
 
 .main {
-	background-color: white;
-	margin-top: 110px;
-	padding-left: 100px;
-	min-width: 1200px;
-	height: 500px;
-	position: relative;
-	z-index: 1;
+  background-color: white;
+  margin-top: 110px;
+  padding-left: 100px;
+  min-width: 1200px;
+  height: 500px;
+  position: relative;
+  z-index: 1;
+}
+
+.text-container {
+  position: absolute;
+  left: 650px;
+  height: 425px;
+  width: 600px;
+  padding-top: 75px;
+  font-family: 'Rock Salt';
+}
+.sel-character {
+  font-size: 30px;
+}
+.logo img {
+  float: right;
+  margin-right: 225px;
+  width: 300px;
+  height: 150px;
 }
 
 .ryu {
-	float: left;
-	width: 659px;
-	height: 494px;
+  float: left;
+  width: 659px;
+  height: 494px;
 }
 
-.ryu-ready, .ryu-still, .ryu-throwing {
-	width: 659px;
-	height: 494px;
+.ryu-ready, .ryu-still, .ryu-throwing, .ryu-cool {
+  width: 659px;
+  height: 494px;
 }
 
-.ryu-ready, .ryu-throwing {
+.ryu-ready, .ryu-throwing, .ryu-cool {
   display: none;
 } 
 
@@ -38,7 +58,10 @@ body {
 .ryu-throwing {
   background-image: url('../images/ryu-throwing-hadouken.png');
 }
-.hadouken, .ryu-ready, .ryu-still, .ryu-throwing {
+.ryu-cool {
+  background-image: url('../images/ryu-cool.gif')
+}
+.hadouken, .ryu-ready, .ryu-still, .ryu-throwing, .ryu-cool {
   background-repeat: no-repeat;
 }
 
